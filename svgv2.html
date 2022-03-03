@@ -1,0 +1,49 @@
+<html>
+    <body style="width:100%;height:100%;margin:0;">
+
+    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" viewBox="0 0 1810 2550">
+    <title>封面一</title>
+    <style type="text/css">
+        @font-face {
+            font-family: Muyao-Softbrush;
+            src: url('https://lovebook-public.oss-cn-shenzhen.aliyuncs.com/common/7849BCC9E899D08C81656BFAE7404507');
+        }
+    </style>
+    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g>
+            <image id="bg_pic" x="0" y="0" width="1810" height="2550" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="https://lovebook-public.oss-cn-shenzhen.aliyuncs.com/common/8B69BAE73A9DD60526BCF153C5E109E6"/>
+          
+			<foreignObject width="100%" height="100%"
+				<p id="title" font-family="Muyao-Softbrush" font-size="180" font-weight="normal" letter-spacing="8.88" color="#C38089" x="136" y="326">Lovebook</p>
+			</foreignObject>
+           
+			<foreignObject width="100%" height="100%"
+				<p id="sub-title" font-family="Muyao-Softbrush" font-size="80" font-weight="normal" letter-spacing="3.94666667" color="#C38089" x="136" y="568">把你放在我心尖</p>
+			</foreignObject>
+          
+			<foreignObject width="100%" height="100%"
+				<p id="author" font-family="Muyao-Softbrush" font-size="64" font-weight="normal" letter-spacing="3.15733333" color="#C38089" x="136" y="2193">@ Rose &amp; Jack</p>
+			</foreignObject>
+         
+			<foreignObject width="100%" height="100%"
+				<p id="date" font-family="Muyao-Softbrush" font-size="64" font-weight="normal" letter-spacing="3.15733333" color="#C38089" x="136" y="2298">2021.10.20</p>
+			</foreignObject>
+        </g>
+    </g>
+    <script>  
+        function updateCover(title, sub_title, author, bg_pic, date) {
+            if(bg_pic) document.getElementById('bg_pic').href.baseVal = bg_pic;
+            if(title) document.getElementById("title").innerHTML = title;
+            if(sub_title) document.getElementById("sub-title").innerHTML = sub_title;
+            if(author) document.getElementById("author").innerHTML = author;
+             if(date){
+                document.getElementById("date").innerHTML = date
+            }else {
+                document.getElementById("date").innerHTML = new Date().toISOString().split('T')[0].replace('-', '.');
+            }
+        }
+    </script>
+    </svg>
+
+    </body>
+</html>
